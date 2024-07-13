@@ -30,7 +30,7 @@ This project is licensed under the GNU General Public License v3.0 (GPL-3.0)
 * .env파일을 생성하여, 아래 정보를 입력해주세요  
 NAVER_ID = "chatsoundID" // 당신의 네이버 아이디
 NAVER_PASSWORD = "chatsoundPassword123" // 당신의 네이버 비밀번호
-CHZZK_LIVE_LINK = "https://chzzk.naver.com/live/{당신의 방송국 주소}"  
+CHZZK_LIVE_LINK = `"https://chzzk.naver.com/live/{당신의 방송국 주소}"`  
 
 <br>
 
