@@ -15,8 +15,9 @@ const CHZZK_LIVE_LINK = process.env.CHZZK_LIVE_LINK
 async function startBrowser() {
   // 브라우저 객체 얻기
   const browser = await puppeteer.launch({ headless: false }); // headless: false는 브라우저를 포그라운드로 실행. true는 백그라운드
-  const page = await browser.newPage(); // 브라우저 페이지 생성
-  page.setViewport({ width: 1000, height: 1000 })
+  // const page = await browser.newPage(); // 브라우저 페이지 생성
+  const [page] = await browser.pages();
+  // page.setViewport({ width: 1000, height: 1000 })
 
 
   // 브라우저 페이지 링크를 "네이버 로그인" 링크로 이동
