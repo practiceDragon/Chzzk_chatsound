@@ -1,0 +1,17 @@
+{
+  "name": "chatsound",
+  "version": "1.0.0",
+  "description": "Chzzk에서 채팅이 올라올 때마다, 사운드를 실행시키는 프로그램",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "practiceDragon",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.5",
+    "puppeteer": "^22.13.0"
+  }
+}
