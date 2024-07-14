@@ -19,15 +19,9 @@ async function startBrowser() {
   const [page] = await browser.pages();
   // page.setViewport({ width: 1000, height: 1000 })
 
-
   // 브라우저 페이지 링크를 "네이버 로그인" 링크로 이동
   await page.goto('https://nid.naver.com/nidlogin.login');
 
-  // "네이버 로그인" 페이지에서, id과 password값을 입력하여 로그인.
-  // 이유: 카페안에서 사용자들의 id값을 얻기 위해서 로그인 후, 카페에 가입해야 했음.
-  // (id를 기준으로 하여, 닉네임 변경으로 인한 사용자 추적 불가현상을 해결 함.)
-  // id가 "112"인 "닉1" 유저와
-  // id가 "112"지만, "닉2"로 닉네임 변경한 유저가 동일 인물인지를 구분하지 못했었음.
   await page.evaluate((id, pw) => {
     document.querySelector('#id').value = id;
     document.querySelector('#pw').value = pw;
