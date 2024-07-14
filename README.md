@@ -42,3 +42,5 @@ CHZZK_LIVE_LINK = `"https://chzzk.naver.com/live/{당신의 방송국 주소}"`
 > 이후 개발 일정
 * 채팅을 읽어주는 TTS가 현재 "유나"뿐만 되는 점을 해결
 * 백그라운드에서 실행되도록 변경
+* electron으로 프로그램 수정
+* 채팅으로 TTS 명령어를 사용할 수 있게끔 변경
